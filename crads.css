@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.crud{
+    width: 80%;
+    margin: auto;
+}
+body{
+    background-color: #222;
+    color: #fff;
+    font-family: system-ui;
+}
+
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px;
+}
+input{
+    width: 100%;
+    height: 30px;
+    outline:none;
+    border: none;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 4px;
+}
+input:focus{
+   transform: scale(1.1); 
+}
+.price input{
+    width: 19.2%;
+}
+#total{
+    background-color: #a00d02;
+    padding: 5px 2px;
+    border: 4px;
+    border-radius: 5px;
+
+}
+#total::before{
+    content: 'totale: ';
+}
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color:#b303f9 ;
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.5s;
+    margin-top: 10px;
+    font-size: 16px;
+}
+button:hover{
+background-color: #4704cf;
+letter-spacing: 1px;
+font-size: 18.2px;
+}
+.btnSearch{
+    display: flex;
+   justify-content: space-between;
+}
+.btnSearch button{
+    width: 45%;
+     
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+table th{
+    text-transform: uppercase;
+}
+th,td{
+    padding: 5px;
+
+}
+@media screen and (max-width:500px) {
+    body{overflow: hidden;}
+    input{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 30px;
+        border: none;
+        border-radius: 4px;
+        padding: 4px;
+        margin: 12px;
+      
+    }
+     #price{width: 100%;}
+     #taxes{width: 100%;}
+     #discount{width: 100%;}
+     #ads{width: 100%;}
+     #total{width: 100%;
+        background-color: #c90d68 ;
+        border: 4px;
+        border-radius: 5px;
+        margin: 10px;
+        font-size: large;
+
+    }
+    table{
+        
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+    }
+    table th{
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: row;
+    }
+    th,td{
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+}
+
+
+
+
